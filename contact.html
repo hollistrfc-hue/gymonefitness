@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Gym One Fitness — Stillwater, OK</title>
+  <meta name="description" content="Contact Gym One Fitness in Stillwater, Oklahoma. Get your free trial, ask about membership, personal training, or class schedules. Located at 1317 S Western Rd." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Gym One Fitness Home">
+        <span class="nav-logo-name">GYM <em>ONE</em> FITNESS</span>
+        <span class="nav-logo-sub">Stillwater, Oklahoma</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#contact-form" class="nav-cta">Free Trial</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="about.html">About</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-cta-wrap">
+      <a href="#contact-form" class="btn btn-primary">Start Free Trial</a>
+    </div>
+    <div class="mobile-contact-info">
+      <p>Questions? Call us at</p>
+      <a href="tel:4053389136">(405) 338-9136</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="tag">Get in Touch</span>
+        <h1>Contact Us</h1>
+        <p>Ready to start your free trial? Have questions about membership or classes? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact-form">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: Info -->
+          <div class="contact-info-block fade-up">
+
+            <div class="contact-intro">
+              <h2>Let's Talk Fitness</h2>
+              <p>Whether you're ready to sign up, want to know more about our classes, or just want to stop by and take a look — we're here to help. Fill out the form and we'll get back to you fast.</p>
+            </div>
+
+            <div class="contact-details">
+
+              <div class="contact-detail">
+                <span class="cd-icon">📍</span>
+                <div class="cd-body">
+                  <strong>Address</strong>
+                  <p>1317 S Western Rd<br/>Stillwater, OK 74074<br/><span style="font-size:0.85rem;color:var(--text-muted);">Fountain Square Shopping Center</span></p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="cd-icon">📞</span>
+                <div class="cd-body">
+                  <strong>Phone</strong>
+                  <a href="tel:4053389136">(405) 338-9136</a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="cd-icon">✉️</span>
+                <div class="cd-body">
+                  <strong>Email</strong>
+                  <a href="mailto:info@gymonefitness.com">info@gymonefitness.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="cd-icon">🔑</span>
+                <div class="cd-body">
+                  <strong>Gym Access Hours</strong>
+                  <p>Open 24/7 with Member Keycard<br/><span style="font-size:0.85rem;color:var(--text-muted);">Front desk hours vary — please contact us for current staff hours</span></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              <p style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.85rem;">Follow Us</p>
+              <div class="contact-social-links">
+                <a href="https://www.instagram.com/gymonefitnessok" target="_blank" rel="noopener" class="soc-btn">
+                  📸 Instagram
+                </a>
+                <a href="https://www.facebook.com/gymonefitnessok" target="_blank" rel="noopener" class="soc-btn">
+                  👍 Facebook
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div class="contact-form-card fade-up d2">
+            <div class="form-hdr">
+              <h3>Send Us a Message</h3>
+              <p>We'll respond within 24 hours — usually same day.</p>
+            </div>
+
+            <!--
+              Netlify Forms: This form will be auto-detected by Netlify on deploy.
+              The hidden input[name="form-name"] is required for AJAX submissions.
+            -->
+            <form
+              name="gym-contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/contact.html?success=true"
+            >
+              <!-- Netlify required hidden fields -->
+              <input type="hidden" name="form-name" value="gym-contact" />
+              <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name <span style="color:var(--accent)">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Jane Smith"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(405) 555-0123"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:var(--accent)">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="interest">I'm Interested In… <span style="color:var(--accent)">*</span></label>
+                <select id="interest" name="interest" required>
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="free-trial">🎁 Free Trial</option>
+                  <option value="membership">💳 Membership Info &amp; Pricing</option>
+                  <option value="personal-training">💪 Personal Training</option>
+                  <option value="class-schedule">🗓️ Class Schedule</option>
+                  <option value="general">💬 General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us a bit about your fitness goals, questions, or anything you'd like us to know…"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message &nbsp;→
+              </button>
+              <p class="form-privacy">
+                We respect your privacy. Your info is never shared or sold.
+              </p>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-hdr center fade-up" style="margin-bottom:2.5rem;">
+          <div class="tag">Find Us</div>
+          <h2 class="section-title">We're in Fountain Square</h2>
+          <p class="section-sub">1317 S Western Rd, Stillwater, OK 74074 — easy parking right out front.</p>
+        </div>
+
+        <div class="map-wrap fade-up">
+          <iframe
+            src="https://maps.google.com/maps?q=1317+S+Western+Rd,+Stillwater,+OK+74074&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            title="Gym One Fitness Location Map"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div style="text-align:center;margin-top:1.5rem;">
+          <a
+            href="https://maps.google.com/maps?q=1317+S+Western+Rd,+Stillwater,+OK+74074"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >
+            Open in Google Maps &nbsp;↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="nav-logo-name">GYM <em>ONE</em> FITNESS</span>
+          </a>
+          <p class="footer-tagline">"Where Everyone Knows Your Name" — Stillwater's locally owned community gym since 2005.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/gymonefitnessok" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+            <a href="https://www.facebook.com/gymonefitnessok" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="tel:4053389136" aria-label="Call us">📞</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Started</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html#contact-form">Free Trial</a></li>
+            <li><a href="membership.html">Membership Plans</a></li>
+            <li><a href="classes.html">Class Schedule</a></li>
+            <li><a href="about.html">About Gym One</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <span class="fi">📍</span>
+              <span>1317 S Western Rd<br/>Stillwater, OK 74074</span>
+            </li>
+            <li class="footer-contact-item">
+              <span class="fi">📞</span>
+              <a href="tel:4053389136">(405) 338-9136</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="fi">✉️</span>
+              <a href="mailto:info@gymonefitness.com">info@gymonefitness.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="fi">🔑</span>
+              <span>Open 24/7 — Keycard Access</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Gym One Fitness. All rights reserved. Stillwater, Oklahoma.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Contact</a>
+          <a href="membership.html">Membership</a>
+          <a href="contact.html#contact-form">Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
