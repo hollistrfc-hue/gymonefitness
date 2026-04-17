@@ -3,358 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gym One Fitness | Stillwater, OK — Where Everyone Knows Your Name</title>
-  <meta name="description" content="Gym One Fitness in Stillwater, Oklahoma. Open 24/7 with keycard access. Group classes, personal training, free daycare, infrared sauna, and more. Start your free trial today." />
-  <meta name="keywords" content="gym stillwater ok, fitness center stillwater oklahoma, 24 hour gym stillwater, group fitness classes, personal training stillwater" />
-  <meta property="og:title" content="Gym One Fitness | Stillwater, OK" />
-  <meta property="og:description" content="Where Everyone Knows Your Name. 24/7 access, group classes, personal training & free daycare. Start your free trial." />
-  <meta property="og:type" content="website" />
+  <title>Gym One Fitness — Stillwater's Community Gym</title>
+  <meta name="description" content="Gym One Fitness in Stillwater, OK. Open 24/7. Family friendly. Community first. Memberships starting at $45/mo." />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
 
   <!-- ============================================================
-       NAVIGATION
+       NAVBAR
        ============================================================ -->
-  <header class="navbar" role="banner">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Gym One Fitness Home">
-        <span class="nav-logo-name">GYM <em>ONE</em> FITNESS</span>
-        <span class="nav-logo-sub">Stillwater, Oklahoma</span>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Gym One Fitness — Home">
+        <img src="Gym One Logo Fin.JPG" alt="Gym One Fitness" />
       </a>
-
-      <nav class="nav-links" aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="classes.html">Classes</a>
-        <a href="about.html">About</a>
-        <a href="membership.html">Membership</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html#contact-form" class="nav-cta">Free Trial</a>
-      </nav>
-
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="memberships.html">Memberships</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="classes.html">Classes</a>
-      <a href="about.html">About</a>
-      <a href="membership.html">Membership</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="mobile-cta-wrap">
-      <a href="contact.html#contact-form" class="btn btn-primary">Start Free Trial</a>
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Stillwater, Oklahoma</span>
+        <h1 class="hero__title">GYM ONE<br><em>FITNESS</em></h1>
+        <p class="hero__sub">Stillwater's Community Gym — open 24/7, family friendly, and built around people like you.</p>
+        <div class="hero__btns">
+          <a href="memberships.html" class="btn btn--red">Join Now</a>
+          <a href="memberships.html#day-pass" class="btn btn--white">Get a Day Pass</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="IMG_4195.JPG" alt="Gym One Fitness" />
+      </div>
     </div>
-    <div class="mobile-contact-info">
-      <p>Questions? Call us at</p>
-      <a href="tel:4053389136">(405) 338-9136</a>
+  </section>
+
+  <!-- ============================================================
+       WHY GYM ONE
+       ============================================================ -->
+  <section class="section--white">
+    <div class="container">
+      <span class="eyebrow">Why Gym One</span>
+      <h2 style="margin-bottom: 2.5rem;">Built different.<br>On purpose.</h2>
+    </div>
+    <div class="feature-row">
+      <div class="feature-block">
+        <span class="feature-block__big">24/7</span>
+        <span class="feature-block__tag">Always Open</span>
+        <p>Train on your schedule — not ours. Gym One is open around the clock, every day of the year. Early mornings, late nights, holidays — the door is always unlocked for members.</p>
+      </div>
+      <div class="feature-block">
+        <span class="feature-block__big">FAM</span>
+        <span class="feature-block__tag">Family Friendly</span>
+        <p>Bring the whole crew. We offer add-on memberships for family members 14+, on-site childcare for ages 8 weeks to 10 years, and a welcoming atmosphere for all fitness levels.</p>
+      </div>
+      <div class="feature-block">
+        <span class="feature-block__big">ONE</span>
+        <span class="feature-block__tag">Community First</span>
+        <p>Locally owned and operated in Stillwater. We're not a chain — we're your neighbors. Every membership goes back into the gym, the community, and the people who show up every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MEMBERSHIPS PREVIEW
+       ============================================================ -->
+  <section class="section--dark section" id="memberships">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Memberships</span>
+      <h2 style="margin-bottom: 0.5rem;">Simple pricing.<br>No runaround.</h2>
+      <hr class="divider divider--white" style="margin-bottom: 2.5rem;" />
+
+      <div class="membership-preview">
+
+        <div class="mcard">
+          <div class="mcard__name">Club Membership</div>
+          <div class="mcard__price"><sup>$</sup>45<span>/mo</span></div>
+          <p class="mcard__desc">Full 24/7 access. Draft on the 1st or 10th of the month. Our most flexible ongoing membership.</p>
+          <a href="memberships.html" class="btn btn--white">View Details</a>
+        </div>
+
+        <div class="mcard mcard--featured">
+          <span class="mcard__badge">POPULAR</span>
+          <div class="mcard__name">6-Month Membership</div>
+          <div class="mcard__price"><sup>$</sup>275</div>
+          <p class="mcard__desc">Six months of full access, paid upfront. Save over the monthly rate and commit to the gym — and yourself.</p>
+          <a href="memberships.html" class="btn btn--red">View Details</a>
+        </div>
+
+        <div class="mcard">
+          <div class="mcard__name">1-Year Membership</div>
+          <div class="mcard__price"><sup>$</sup>480</div>
+          <p class="mcard__desc">Best value for dedicated members. A full year of 24/7 access — one payment, zero excuses.</p>
+          <a href="memberships.html" class="btn btn--white">View Details</a>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;">
+        <a href="memberships.html" class="btn btn--white">View All Plans &amp; Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SILVER SNEAKERS CALLOUT
+       ============================================================ -->
+  <div class="ss-band">
+    <div class="ss-band__inner">
+      <div class="ss-band__accent">65+</div>
+      <div class="ss-band__text">
+        <h3>Silver Sneakers Accepted</h3>
+        <p>We proudly accept Silver Sneakers — covered gym access for members 65+ through select insurance plans. Check your eligibility and train at no extra cost.</p>
+      </div>
     </div>
   </div>
 
-  <main>
-
-    <!-- ============================================================
-         HERO
-         ============================================================ -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero-content">
-        <div class="hero-eyebrow fade-in">Stillwater's Trusted Gym Since 2005</div>
-        <h1 class="hero-title fade-up d1">
-          GYM<br/>
-          <span class="green">ONE</span><br/>
-          FITNESS
-        </h1>
-        <p class="hero-sub fade-up d2">
-          <strong>"Where Everyone Knows Your Name"</strong><br/>
-          24/7 Access &nbsp;·&nbsp; Group Classes &nbsp;·&nbsp; Real Community
-        </p>
-        <div class="hero-actions fade-up d3">
-          <a href="contact.html#contact-form" class="btn btn-primary">Start Your Free Trial</a>
-          <a href="membership.html" class="btn btn-outline">View Membership</a>
-        </div>
-      </div>
-      <div class="hero-scroll" aria-hidden="true">Scroll</div>
-    </section>
-
-    <!-- ============================================================
-         FEATURES STRIP
-         ============================================================ -->
-    <div class="features-strip" aria-label="Key Features">
-      <div class="features-strip-inner">
-        <div class="feat-pill fade-in d1">
-          <span class="feat-pill-text">24/7 Keycard Access</span>
-        </div>
-        <div class="feat-pill fade-in d2">
-          <span class="feat-pill-text">8+ Group Classes</span>
-        </div>
-        <div class="feat-pill fade-in d3">
-          <span class="feat-pill-text">Certified Personal Trainers</span>
-        </div>
-        <div class="feat-pill fade-in d4">
-          <span class="feat-pill-text">Free On-Site Daycare</span>
-        </div>
-        <div class="feat-pill fade-in d5">
-          <span class="feat-pill-text">Infrared Sauna</span>
-        </div>
-        <div class="feat-pill fade-in d6">
-          <span class="feat-pill-text">InBody Scanner</span>
+  <!-- ============================================================
+       PERSONAL TRAINING TEASER
+       ============================================================ -->
+  <section class="section--offwhite section">
+    <div class="container">
+      <div class="pt-inner">
+        <div class="pt-deco">LEVEL<br>UP.</div>
+        <div class="pt-content">
+          <span class="eyebrow">Personal Training</span>
+          <h2>Ready to take it<br>to the next level?</h2>
+          <hr class="divider" />
+          <p>Work one-on-one with a Gym One trainer to build a program that actually fits your goals. Whether you're just starting out or chasing a new PR, our trainers are here for it.</p>
+          <p style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">Reach out to learn about availability and rates.</p>
+          <a href="contact.html" class="btn btn--black" style="margin-top: 1.5rem;">Get in Touch</a>
         </div>
       </div>
     </div>
-
-    <!-- ============================================================
-         WHY GYM ONE
-         ============================================================ -->
-    <section class="why-section">
-      <div class="container">
-        <div class="section-hdr center fade-up">
-          <div class="tag">Stillwater's Favorite Gym</div>
-          <h2 class="section-title">More Than a Gym.<br/>It's a Community.</h2>
-          <p class="section-sub">Gym One Fitness has been the heartbeat of Stillwater's fitness community since 2005. We're not a corporate chain — we're your neighbors, your coaches, and your biggest supporters.</p>
-        </div>
-
-        <div class="why-grid">
-          <div class="why-card fade-up d1">
-            <h3>Stillwater's Gym Since 2005</h3>
-            <p>For over 20 years, Gym One has been the gym Stillwater comes back to. We know your name, we know your goals, and we're genuinely invested in your success. This is what a real community gym looks like — and there's nothing else like it in town.</p>
-          </div>
-          <div class="why-card fade-up d2">
-            <h3>Modern Equipment, Spotless Facility</h3>
-            <p>Owners Daniel and Sarah Bassett have made serious investments in top-tier equipment and facility upkeep. You'll never wait for machines or settle for outdated gear. Gym One delivers a premium experience at a locally competitive price.</p>
-          </div>
-          <div class="why-card fade-up d3">
-            <h3>Every Level, Every Goal</h3>
-            <p>Whether you're walking into a gym for the first time or chasing your next personal record, Gym One is built for you. Our certified personal trainers and diverse class lineup support every fitness level — no intimidation, no pressure, just results.</p>
-          </div>
-          <div class="why-card fade-up d4">
-            <h3>Open 24 Hours a Day</h3>
-            <p>Real life doesn't follow a 9-to-5 schedule — and neither does Gym One. Your membership includes round-the-clock keycard access so you can train before the sun comes up or long after it goes down. Your gym, your schedule, no exceptions.</p>
-          </div>
-          <div class="why-card fade-up d5">
-            <h3>Free Childcare — Included</h3>
-            <p>Gym One is one of the only fitness centers in Stillwater offering complimentary on-site childcare with every qualifying membership. Drop off the kids with our caring staff, step into the gym, and get a focused, guilt-free workout every single time.</p>
-          </div>
-          <div class="why-card fade-up d6">
-            <h3>Proud to Be Stillwater's Own</h3>
-            <p>Joining Gym One means more than a monthly membership — it means joining a gym that's been part of this city's fabric for over two decades. Locally owned, deeply rooted, and committed to Stillwater for the long haul. Come see why the community keeps coming back.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         STATS
-         ============================================================ -->
-    <div class="stats-section" aria-label="Gym Stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item fade-up d1">
-            <div class="stat-num">
-              <span class="counter" data-target="20" data-suffix="+">20+</span>
-            </div>
-            <div class="stat-lbl">Years in Stillwater</div>
-          </div>
-          <div class="stat-item fade-up d2">
-            <div class="stat-num">24/7</div>
-            <div class="stat-lbl">Keycard Access</div>
-          </div>
-          <div class="stat-item fade-up d3">
-            <div class="stat-num">
-              <span class="counter" data-target="8" data-suffix="+">8+</span>
-            </div>
-            <div class="stat-lbl">Group Classes</div>
-          </div>
-          <div class="stat-item fade-up d4">
-            <div class="stat-num">FREE</div>
-            <div class="stat-lbl">Daycare with Membership</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================
-         TESTIMONIALS
-         ============================================================ -->
-    <section class="testimonials-section">
-      <div class="container">
-        <div class="section-hdr center fade-up">
-          <div class="tag">Member Reviews</div>
-          <h2 class="section-title">Stillwater Loves Gym One</h2>
-          <p class="section-sub">Don't take our word for it. Here's what real Gym One members have to say.</p>
-        </div>
-
-        <div class="testimonials-grid">
-
-          <div class="testi-card fade-up d1">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">This gym feels like a second home. Everyone knows your name — the staff, the trainers, even the other members. There's no other gym in Stillwater that comes close to the community here.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">JR</div>
-              <div>
-                <span class="testi-meta-name">Jamie R.</span>
-                <span class="testi-meta-since">Member since 2019</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card fade-up d2">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">Without a doubt the best gym in Stillwater. I've tried them all. The equipment is great, the classes are legit, and the price is fair. Don't waste time looking anywhere else.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">MT</div>
-              <div>
-                <span class="testi-meta-name">Marcus T.</span>
-                <span class="testi-meta-since">Member since 2021</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card fade-up d3">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">Always spotless and the staff is genuinely friendly. I've been to big-box gyms across the country and Gym One is a cut above. Clean facility, great equipment, and people who actually care.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">PS</div>
-              <div>
-                <span class="testi-meta-name">Priya S.</span>
-                <span class="testi-meta-since">Member since 2022</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card fade-up d4">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">The group classes are incredible. My instructor pushes me every single week and I've seen real results since joining. Body Pump alone has completely changed my strength training.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">KM</div>
-              <div>
-                <span class="testi-meta-name">Kelsey M.</span>
-                <span class="testi-meta-since">Member since 2020</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card fade-up d5">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">Since the Bassetts took over they've put serious money into the equipment and the overall experience. This place keeps getting better. Proud to be a long-time member.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">DL</div>
-              <div>
-                <span class="testi-meta-name">Dave L.</span>
-                <span class="testi-meta-since">Member since 2018</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card fade-up d6">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">As a mom, the free daycare is a game-changer. I can actually focus on my workout without worrying about the kids. Gym One makes it easy to be consistent and I love that.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">AL</div>
-              <div>
-                <span class="testi-meta-name">Ashley L.</span>
-                <span class="testi-meta-since">Member since 2023</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CTA BANNER
-         ============================================================ -->
-    <section class="cta-banner">
-      <div class="container">
-        <div class="fade-up">
-          <h2>Ready to Make <span class="green">Your Move?</span></h2>
-          <p>Join the Gym One community today. Start with a free trial — no credit card required, no pressure, no catch. Just come see what everyone's talking about.</p>
-          <div class="cta-actions">
-            <a href="contact.html#contact-form" class="btn btn-primary">Start Your Free Trial</a>
-            <a href="tel:4053389136" class="btn btn-outline">Call (405) 338-9136</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
+  </section>
 
   <!-- ============================================================
        FOOTER
        ============================================================ -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <span class="nav-logo-name">GYM <em>ONE</em> FITNESS</span>
-          </a>
-          <p class="footer-tagline">"Where Everyone Knows Your Name" — Stillwater's locally owned community gym since 2005.</p>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/gymonefitnessok" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-            <a href="https://www.facebook.com/gymonefitnessok" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-            <a href="tel:4053389136" aria-label="Call us">Call Us</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="classes.html">Group Fitness</a></li>
-            <li><a href="contact.html">Personal Training</a></li>
-            <li><a href="membership.html">Free Daycare</a></li>
-            <li><a href="membership.html">Infrared Sauna</a></li>
-            <li><a href="contact.html#contact-form">Free Trial</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-contact-list">
-            <li class="footer-contact-item">
-              <span>1317 S Western Rd<br/>Stillwater, OK 74074<br/><em style="font-style:normal;font-size:0.78rem;">Fountain Square Shopping Center</em></span>
-            </li>
-            <li class="footer-contact-item">
-              <a href="tel:4053389136">(405) 338-9136</a>
-            </li>
-            <li class="footer-contact-item">
-              <a href="mailto:info@gymonefitness.com">info@gymonefitness.com</a>
-            </li>
-            <li class="footer-contact-item">
-              <span>Open 24/7 — Keycard Access</span>
-            </li>
-          </ul>
-        </div>
-
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__logo">
+        <a href="index.html"><img src="Gym One Logo Fin - White Letters.JPG" alt="Gym One Fitness" class="footer__logo-img" /></a>
+        <p class="footer__tagline">Stillwater's Community Gym.<br>Open 24/7. Always welcoming.</p>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2025 Gym One Fitness. All rights reserved. Stillwater, Oklahoma.</p>
-        <div class="footer-bottom-links">
-          <a href="contact.html">Contact</a>
-          <a href="membership.html">Membership</a>
-          <a href="contact.html#contact-form">Free Trial</a>
-        </div>
+      <div>
+        <p class="footer__heading">Navigate</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="memberships.html">Memberships</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <div>
+        <p class="footer__heading">Hours</p>
+        <address class="footer__address">
+          Open 24/7<br>
+          <br>
+          <strong style="color:rgba(255,255,255,0.6); font-weight:600;">Staffed Hours</strong><br>
+          Mon–Fri: 8am – 8pm<br>
+          Sat–Sun: 10am – 2pm
+        </address>
+      </div>
+      <div>
+        <p class="footer__heading">Contact</p>
+        <address class="footer__address">
+          Stillwater, Oklahoma<br>
+          <a href="tel:+14056121882">405.612.1882</a><br>
+          <br>
+          <a href="memberships.html">Day Pass Info</a><br>
+          <a href="memberships.html">Silver Sneakers</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Gym One Fitness. All rights reserved.</span>
+      <span>Stillwater, Oklahoma</span>
     </div>
   </footer>
 
