@@ -1,6 +1,6 @@
 /* ============================================================
    Gym One Fitness — style.css
-   Colors: #000 · #1a1a1a · #fff · #D32F2F
+   Colors: #000 · #1a1a1a · #fff
    Fonts: Bebas Neue (headings) · Inter (body)
    ============================================================ */
 
@@ -26,8 +26,6 @@ ul   { list-style: none; }
   --dark:       #1a1a1a;
   --white:      #ffffff;
   --off-white:  #f5f5f5;
-  --red:        #D32F2F;
-  --red-dark:   #B71C1C;
   --gray:       #888888;
   --light-gray: #e0e0e0;
 }
@@ -54,7 +52,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--black);
   margin-bottom: 1rem;
 }
 .eyebrow--light { color: rgba(255,255,255,0.45); }
@@ -83,7 +81,7 @@ p:last-child { margin-bottom: 0; }
 .divider {
   width: 48px;
   height: 3px;
-  background: var(--red);
+  background: var(--black);
   border: none;
   margin: 0.75rem 0 2rem;
 }
@@ -103,8 +101,8 @@ p:last-child { margin-bottom: 0; }
   line-height: 1;
   text-align: center;
 }
-.btn--red     { background: var(--red);   color: var(--white); border-color: var(--red);   }
-.btn--red:hover { background: var(--red-dark); border-color: var(--red-dark); color: var(--white); }
+.btn--red     { background: var(--white);  color: var(--black); border-color: var(--white); }
+.btn--red:hover { background: transparent; border-color: var(--white); color: var(--white); }
 .btn--white   { background: transparent; color: var(--white); border-color: var(--white); }
 .btn--white:hover { background: var(--white); color: var(--black); }
 .btn--black   { background: var(--black); color: var(--white); border-color: var(--black); }
@@ -224,7 +222,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--white);
   margin-bottom: 1.25rem;
 }
-.hero__title em { font-style: normal; color: var(--red); }
+.hero__title em { font-style: normal; color: var(--white); }
 .hero__sub {
   font-family: 'Inter', sans-serif;
   font-size: clamp(1rem, 1.8vw, 1.15rem);
@@ -276,7 +274,7 @@ p:last-child { margin-bottom: 0; }
 }
 .page-hero h1         { color: var(--white); margin-bottom: 0.5rem; }
 .page-hero p          { color: rgba(255,255,255,0.5); font-size: 1.1rem; max-width: 560px; }
-.page-hero__line      { width: 52px; height: 3px; background: var(--red); margin: 1rem 0 1.25rem; }
+.page-hero__line      { width: 52px; height: 3px; background: var(--white); margin: 1rem 0 1.25rem; }
 
 /* ============================================================
    WHY GYM ONE — feature blocks
@@ -308,7 +306,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--black);
   margin-bottom: 1rem;
 }
 .feature-block p { font-size: 0.92rem; color: #555; line-height: 1.7; margin: 0; }
@@ -332,13 +330,13 @@ p:last-child { margin-bottom: 0; }
   transition: border-color 0.2s;
 }
 .mcard:hover { border-color: rgba(255,255,255,0.28); }
-.mcard--featured { border-color: var(--red); background: rgba(211,47,47,0.06); }
+.mcard--featured { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.08); }
 .mcard__badge {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 0.66rem;
   letter-spacing: 0.16em;
-  background: var(--red);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
   padding: 0.28rem 0.7rem;
   display: inline-block;
   align-self: flex-start;
@@ -386,7 +384,7 @@ p:last-child { margin-bottom: 0; }
   transition: box-shadow 0.2s;
 }
 .plan-card:hover { box-shadow: 6px 6px 0 var(--black); }
-.plan-card--accent { border-top: 4px solid var(--red); }
+.plan-card--accent { border-top: 4px solid var(--black); }
 .plan-card__name {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(20px, 2.5vw, 28px);
@@ -418,8 +416,8 @@ p:last-child { margin-bottom: 0; }
    ============================================================ */
 .ss-band {
   background: var(--dark);
-  border-top: 3px solid var(--red);
-  border-bottom: 3px solid var(--red);
+  border-top: 3px solid rgba(255,255,255,0.15);
+  border-bottom: 3px solid rgba(255,255,255,0.15);
   padding: 2.75rem 0;
 }
 .ss-band__inner {
@@ -433,7 +431,7 @@ p:last-child { margin-bottom: 0; }
 .ss-band__accent {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5rem;
-  color: var(--red);
+  color: var(--white);
   flex-shrink: 0;
   line-height: 1;
 }
@@ -555,7 +553,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--black);
   margin-bottom: 0.35rem;
 }
 .contact-info-value { font-size: 1.1rem; font-weight: 600; color: var(--dark); display: block; }
@@ -599,7 +597,7 @@ p:last-child { margin-bottom: 0; }
 .form-success {
   display: none;
   background: var(--dark);
-  border: 2px solid var(--red);
+  border: 2px solid var(--white);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   color: var(--white);
@@ -649,7 +647,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--red);
+  color: rgba(255,255,255,0.55);
   margin-bottom: 1.25rem;
 }
 .footer__links li  { margin-bottom: 0.6rem; }
