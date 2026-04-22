@@ -622,6 +622,37 @@ p:last-child { margin-bottom: 0; }
 .cancel-wrap a:hover { color: var(--dark); }
 
 /* ============================================================
+   FIND US STRIP (home page)
+   ============================================================ */
+.find-us {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.find-us__address,
+.find-us__hours { flex: 1; min-width: 200px; }
+.find-us__street {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  color: var(--white);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.find-us__sub {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .find-us { gap: 2.5rem; }
+  .find-us__hours { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer {
