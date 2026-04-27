@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment — Gym One Fitness</title>
+  <meta name="description" content="Explore the facilities at Gym One Fitness in Stillwater, OK. CrossFit room, cardio area, free weights, and strength equipment." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ---- Equipment Page Styles ---- */
+    .eq-section {
+      padding: 5rem 0 6rem;
+      background: var(--white);
+    }
+
+    .eq-category {
+      margin-bottom: 5rem;
+    }
+    .eq-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .eq-category__header {
+      margin-bottom: 2rem;
+    }
+    .eq-category__title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(32px, 4vw, 52px);
+      letter-spacing: 0.04em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+    .eq-category__desc {
+      font-size: 1rem;
+      color: #555;
+      max-width: 640px;
+      line-height: 1.75;
+    }
+
+    .eq-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--black);
+      border: none;
+      margin: 0.75rem 0 1.25rem;
+    }
+
+    /* Photo grid */
+    .eq-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .eq-grid--2 { grid-template-columns: repeat(2, 1fr); }
+    .eq-grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+    .eq-photo {
+      display: flex;
+      flex-direction: column;
+    }
+    .eq-photo__img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(20%) contrast(1.05);
+    }
+    .eq-photo__caption {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--black);
+      padding: 0.6rem 0 0;
+      border-top: 2px solid var(--black);
+      margin-top: 0.5rem;
+    }
+
+    /* Category separator */
+    .eq-sep {
+      border: none;
+      border-top: 1px solid var(--light-gray);
+      margin: 5rem 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .eq-grid--2,
+      .eq-grid--3 {
+        grid-template-columns: 1fr;
+      }
+      .eq-section {
+        padding: 3.5rem 0 4.5rem;
+      }
+      .eq-category {
+        margin-bottom: 3.5rem;
+      }
+      .eq-sep {
+        margin: 3.5rem 0 0;
+      }
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      .eq-grid--2 { grid-template-columns: repeat(2, 1fr); }
+      .eq-grid--3 { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Gym One Fitness — Home">
+        <img src="gym-one-logo.jpg" alt="Gym One Fitness" />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="memberships.html">Memberships</a></li>
+        <li><a href="equipment.html" class="active">Equipment</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <section class="section--black section--sm">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Gym One Fitness</span>
+      <h1 style="color: var(--white); font-size: clamp(44px, 7vw, 88px);">Our Facilities</h1>
+      <hr class="divider divider--white" style="margin-top: 1rem;" />
+      <p style="color: rgba(255,255,255,0.6); max-width: 560px; margin: 0;">
+        Everything you need under one roof — CrossFit, cardio, free weights, and more. Built for every level of athlete.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FACILITIES SECTION
+       ============================================================ -->
+  <section class="eq-section">
+    <div class="container">
+
+      <!-- CrossFit Room -->
+      <div class="eq-category">
+        <div class="eq-category__header">
+          <span class="eyebrow">Facilities</span>
+          <h2 class="eq-category__title">CrossFit Room</h2>
+          <hr class="eq-divider" />
+          <p class="eq-category__desc">Dedicated CrossFit space with squat racks, barbells, turf, gymnastics rings, and group class programming.</p>
+        </div>
+        <div class="eq-grid eq-grid--2">
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/crossfitclass.jpg" alt="CrossFit class in session" />
+            <span class="eq-photo__caption">CrossFit Room</span>
+          </div>
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/crossfitsquats.jpg" alt="CrossFit squats" />
+            <span class="eq-photo__caption">CrossFit Room</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="eq-sep" />
+
+      <!-- Cardio Area -->
+      <div class="eq-category" style="margin-top: 5rem;">
+        <div class="eq-category__header">
+          <span class="eyebrow">Facilities</span>
+          <h2 class="eq-category__title">Cardio Area</h2>
+          <hr class="eq-divider" />
+          <p class="eq-category__desc">StairMasters, treadmills, Cybex machines, Concept2 rowers, and AssaultBikes — everything for your conditioning work.</p>
+        </div>
+        <div class="eq-grid eq-grid--2">
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/cardioarea.jpg" alt="Cardio area" />
+            <span class="eq-photo__caption">Cardio Area</span>
+          </div>
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/crossfitcardio.jpg" alt="CrossFit cardio equipment" />
+            <span class="eq-photo__caption">Cardio Area</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="eq-sep" />
+
+      <!-- Free Weights & Strength -->
+      <div class="eq-category" style="margin-top: 5rem;">
+        <div class="eq-category__header">
+          <span class="eyebrow">Facilities</span>
+          <h2 class="eq-category__title">Free Weights &amp; Strength</h2>
+          <hr class="eq-divider" />
+          <p class="eq-category__desc">Full dumbbell rack, Cybex cable machines, squat platforms, leg press, and benches for every lift.</p>
+        </div>
+        <div class="eq-grid eq-grid--3">
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/freeweights.jpg" alt="Free weights area" />
+            <span class="eq-photo__caption">Free Weights &amp; Strength</span>
+          </div>
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/legstuff2.jpg" alt="Leg press and lower body machines" />
+            <span class="eq-photo__caption">Free Weights &amp; Strength</span>
+          </div>
+          <div class="eq-photo">
+            <img class="eq-photo__img" src="gym-one-photos/equipmentweights.jpg" alt="Weight equipment" />
+            <span class="eq-photo__caption">Free Weights &amp; Strength</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BAND
+       ============================================================ -->
+  <section class="section--black section--sm">
+    <div class="container" style="text-align: center;">
+      <span class="eyebrow eyebrow--light">Ready to train?</span>
+      <h2 style="color: var(--white); margin-bottom: 1.5rem;">Come see it for yourself.</h2>
+      <a href="memberships.html" class="btn btn--white">View Memberships</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__logo">
+        <a href="index.html"><img src="gym-one-logo-white.jpg" alt="Gym One Fitness" class="footer__logo-img" /></a>
+        <p class="footer__tagline">Stillwater's Community Gym.<br>Open 24/7. Always welcoming.</p>
+      </div>
+      <div>
+        <p class="footer__heading">Navigate</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="memberships.html">Memberships</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading">Hours</p>
+        <address class="footer__address">
+          Open 24/7<br>
+          <br>
+          <strong style="color:rgba(255,255,255,0.6); font-weight:600;">Staffed Hours</strong><br>
+          Mon–Fri: 8am – 8pm<br>
+          Sat–Sun: 10am – 2pm
+        </address>
+      </div>
+      <div>
+        <p class="footer__heading">Contact</p>
+        <address class="footer__address">
+          1317 S Western Rd<br>
+          Fountain Square, Stillwater, OK<br>
+          <a href="tel:+14053389136">405.338.9136</a><br>
+          <br>
+          <a href="memberships.html">Day Pass Info</a><br>
+          <a href="memberships.html">Silver Sneakers</a>
+        </address>
+        <div class="footer__social" style="margin-top:1.25rem;">
+          <a href="https://www.facebook.com/gymonefitnessok" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/gymonefitnessok/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Gym One Fitness. All rights reserved.</span>
+      <span class="footer__credit">Site by <a href="https://www.novabuildweb.com" target="_blank" rel="noopener noreferrer">NovaBuild LLC</a></span>
+      <span>Stillwater, Oklahoma</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
