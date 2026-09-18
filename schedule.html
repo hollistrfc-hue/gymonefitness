@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <title>Class Schedule — Gym One Fitness</title>
+  <meta name="description" content="Weekly group fitness class schedule at Gym One Fitness in Stillwater, OK. Yoga, Pilates, Bike &amp; Body, HIIT, and more — included with every membership." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Gym One Fitness — Home">
+        <img src="gym-one-logo.jpg" alt="Gym One Fitness" />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="memberships.html">Memberships</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <div class="page-hero" data-word="SCHEDULE">
+    <div class="container page-hero__inner">
+      <span class="eyebrow">Group Fitness</span>
+      <h1>Class Schedule</h1>
+      <div class="page-hero__line"></div>
+      <p>All classes included with every membership. No add-ons, no per-class fees — just show up.</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCHEDULE
+       ============================================================ -->
+  <section class="section--white section" id="schedule">
+    <div class="container">
+
+      <!-- Filters + timezone -->
+      <div class="sched-toolbar">
+        <div class="sched-filters" role="group" aria-label="Filter classes by type">
+          <button class="sched-filter-btn active" data-filter="all">All Classes</button>
+          <button class="sched-filter-btn" data-filter="mind-body">Mind-Body</button>
+          <button class="sched-filter-btn" data-filter="cardio">Cardio</button>
+          <button class="sched-filter-btn" data-filter="strength">Strength</button>
+        </div>
+        <p class="sched-timezone">All times Central (CT)</p>
+      </div>
+
+      <!-- Desktop: 7-column grid (rendered by JS) -->
+      <div class="sched-grid" id="sched-desktop" aria-label="Weekly class schedule"></div>
+
+      <!-- Mobile: day tabs + panels (rendered by JS) -->
+      <div class="sched-mobile" id="sched-mobile">
+        <div class="sched-tabs" role="tablist" aria-label="Select a day"></div>
+        <div class="sched-panels"></div>
+      </div>
+
+      <!-- Legend -->
+      <div class="sched-legend" aria-label="Class category legend">
+        <div class="sched-legend__item">
+          <span class="sched-dot sched-dot--mind-body" aria-hidden="true"></span>
+          <span>Mind-Body &mdash; Yoga, Power Yoga, Pilates, Move</span>
+        </div>
+        <div class="sched-legend__item">
+          <span class="sched-dot sched-dot--cardio" aria-hidden="true"></span>
+          <span>Cardio &mdash; Bike &amp; Body, Cardio Mix, HIIT</span>
+        </div>
+        <div class="sched-legend__item">
+          <span class="sched-dot sched-dot--strength" aria-hidden="true"></span>
+          <span>Strength &mdash; Chisel, Total Body</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="section--black section--sm">
+    <div class="container text-center">
+      <span class="eyebrow eyebrow--light" style="text-align:center;">Ready to show up?</span>
+      <h2 style="margin-bottom:1.5rem;">Join and start attending classes today.</h2>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="memberships.html" class="btn btn--white">View Memberships</a>
+        <a href="contact.html" class="btn btn--white">Book a Class</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__logo">
+        <a href="index.html"><img src="gym-one-logo-white.jpg" alt="Gym One Fitness" class="footer__logo-img" /></a>
+        <p class="footer__tagline">Stillwater's Community Gym.<br>Open 24/7. Always welcoming.</p>
+      </div>
+      <div>
+        <p class="footer__heading">Navigate</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="memberships.html">Memberships</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading">Hours</p>
+        <address class="footer__address">
+          Open 24/7<br>
+          <br>
+          <strong style="color:rgba(255,255,255,0.6); font-weight:600;">Staffed Hours</strong><br>
+          Mon–Fri: 8am – 8pm<br>
+          Sat–Sun: 10am – 2pm
+        </address>
+      </div>
+      <div>
+        <p class="footer__heading">Contact</p>
+        <address class="footer__address">
+          1317 S Western Rd<br>
+          Fountain Square, Stillwater, OK<br>
+          <a href="tel:+14053389136">(405) 338-9136</a><br>
+          <br>
+          <a href="memberships.html">Day Pass Info</a><br>
+          <a href="memberships.html">Silver Sneakers</a>
+        </address>
+        <div class="footer__social" style="margin-top:1.25rem;">
+          <a href="https://www.facebook.com/gymonefitnessok" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/gymonefitnessok/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Gym One Fitness. All rights reserved.</span>
+      <span class="footer__credit">Site by <a href="https://www.novabuildweb.com" target="_blank" rel="noopener noreferrer">NovaBuild LLC</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></span>
+      <span>Stillwater, Oklahoma</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ── Schedule data — edit here to update the calendar ──────
+    var SCHEDULE = [
+      { day: 'Monday',    time: '6:00 AM',  name: 'Move',        category: 'mind-body' },
+      { day: 'Monday',    time: '9:00 AM',  name: 'Bike & Body', category: 'cardio'    },
+      { day: 'Monday',    time: '5:30 PM',  name: 'Pilates',     category: 'mind-body' },
+      { day: 'Tuesday',   time: '9:00 AM',  name: 'Power Yoga',  category: 'mind-body' },
+      { day: 'Tuesday',   time: '5:30 PM',  name: 'Bike & Body', category: 'cardio'    },
+      { day: 'Wednesday', time: '6:00 AM',  name: 'Cardio Mix',  category: 'cardio'    },
+      { day: 'Wednesday', time: '9:00 AM',  name: 'Chisel',      category: 'strength'  },
+      { day: 'Wednesday', time: '5:30 PM',  name: 'Bike & Body', category: 'cardio'    },
+      { day: 'Thursday',  time: '9:00 AM',  name: 'HIIT',        category: 'cardio'    },
+      { day: 'Friday',    time: '6:00 AM',  name: 'Yoga',        category: 'mind-body' },
+      { day: 'Friday',    time: '9:00 AM',  name: 'Total Body',  category: 'strength'  },
+      { day: 'Saturday',  time: '9:00 AM',  name: 'Total Body',  category: 'strength'  },
+      { day: 'Saturday',  time: '11:00 AM', name: 'Yoga',        category: 'mind-body' }
+    ];
+
+    var DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var DAY_ABBR = { Monday:'Mon', Tuesday:'Tue', Wednesday:'Wed', Thursday:'Thu', Friday:'Fri', Saturday:'Sat', Sunday:'Sun' };
+    var today = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
+
+    // ── Build desktop grid ─────────────────────────────────────
+    function buildDesktop(filter) {
+      var grid = document.getElementById('sched-desktop');
+      grid.innerHTML = '';
+
+      DAYS.forEach(function(day) {
+        var isSunday = day === 'Sunday';
+        var isToday  = day === today;
+        var classes  = SCHEDULE.filter(function(c) {
+          return c.day === day && (filter === 'all' || c.category === filter);
+        });
+
+        var col = document.createElement('div');
+        col.className = 'sched-col'
+          + (isToday  ? ' sched-col--today'  : '')
+          + (isSunday ? ' sched-col--sunday' : '');
+        col.setAttribute('aria-label', day + (isToday ? ' — today' : ''));
+
+        // Header
+        var hdr = document.createElement('div');
+        hdr.className = 'sched-col-header';
+        hdr.innerHTML = '<span class="sched-day-name">' + day + '</span>'
+          + (isToday ? '<span class="sched-today-badge">Today</span>' : '');
+        col.appendChild(hdr);
+
+        // Body
+        var body = document.createElement('div');
+        body.className = 'sched-col-body';
+
+        if (isSunday) {
+          var rest = document.createElement('p');
+          rest.className = 'sched-empty';
+          rest.textContent = 'No classes';
+          body.appendChild(rest);
+        } else if (classes.length === 0) {
+          var none = document.createElement('p');
+          none.className = 'sched-empty';
+          none.textContent = filter === 'all' ? 'No classes' : 'None this day';
+          body.appendChild(none);
+        } else {
+          classes.forEach(function(c) {
+            var card = document.createElement('div');
+            card.className = 'sched-card sched-card--' + c.category;
+            card.innerHTML = '<span class="sched-card-time">' + c.time + '</span>'
+              + '<span class="sched-card-name">' + c.name + '</span>';
+            body.appendChild(card);
+          });
+        }
+
+        col.appendChild(body);
+        grid.appendChild(col);
+      });
+    }
+
+    // ── Build mobile tabs ──────────────────────────────────────
+    function buildMobile(filter) {
+      var tabList = document.querySelector('.sched-tabs');
+      var panels  = document.querySelector('.sched-panels');
+      tabList.innerHTML = '';
+      panels.innerHTML  = '';
+
+      var mobileDays = DAYS.filter(function(d) { return d !== 'Sunday'; });
+      var defaultDay = mobileDays.indexOf(today) !== -1 ? today : 'Monday';
+
+      mobileDays.forEach(function(day) {
+        var isDefault = day === defaultDay;
+        var isToday   = day === today;
+        var panelId   = 'panel-' + day.toLowerCase();
+        var tabId     = 'tab-'   + day.toLowerCase();
+
+        // Tab button
+        var btn = document.createElement('button');
+        btn.className = 'sched-tab' + (isDefault ? ' active' : '') + (isToday ? ' sched-tab--today' : '');
+        btn.setAttribute('role', 'tab');
+        btn.setAttribute('aria-selected', isDefault ? 'true' : 'false');
+        btn.setAttribute('aria-controls', panelId);
+        btn.setAttribute('id', tabId);
+        btn.textContent = DAY_ABBR[day];
+        tabList.appendChild(btn);
+
+        // Panel
+        var panel = document.createElement('div');
+        panel.className = 'sched-panel' + (isDefault ? ' active' : '');
+        panel.setAttribute('role', 'tabpanel');
+        panel.setAttribute('id', panelId);
+        panel.setAttribute('aria-labelledby', tabId);
+        panel.setAttribute('tabindex', '0');
+
+        var classes = SCHEDULE.filter(function(c) {
+          return c.day === day && (filter === 'all' || c.category === filter);
+        });
+
+        if (classes.length === 0) {
+          var empty = document.createElement('p');
+          empty.className = 'sched-empty';
+          empty.style.padding = '1.5rem 0';
+          empty.textContent = filter === 'all' ? 'No classes scheduled.' : 'No ' + filter + ' classes this day.';
+          panel.appendChild(empty);
+        } else {
+          classes.forEach(function(c) {
+            var card = document.createElement('div');
+            card.className = 'sched-card sched-card--' + c.category;
+            card.innerHTML = '<span class="sched-card-time">' + c.time + '</span>'
+              + '<span class="sched-card-name">' + c.name + '</span>';
+            panel.appendChild(card);
+          });
+        }
+
+        panels.appendChild(panel);
+      });
+
+      // Tab click + keyboard nav
+      var allTabs = tabList.querySelectorAll('.sched-tab');
+      allTabs.forEach(function(btn, idx) {
+        btn.addEventListener('click', function() {
+          allTabs.forEach(function(b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          panels.querySelectorAll('.sched-panel').forEach(function(p) {
+            p.classList.remove('active');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
+        });
+
+        btn.addEventListener('keydown', function(e) {
+          var tabs = Array.prototype.slice.call(allTabs);
+          var i    = tabs.indexOf(btn);
+          if (e.key === 'ArrowRight' && i < tabs.length - 1) { e.preventDefault(); tabs[i + 1].focus(); }
+          if (e.key === 'ArrowLeft'  && i > 0)               { e.preventDefault(); tabs[i - 1].focus(); }
+          if (e.key === 'Home')  { e.preventDefault(); tabs[0].focus(); }
+          if (e.key === 'End')   { e.preventDefault(); tabs[tabs.length - 1].focus(); }
+        });
+      });
+    }
+
+    // ── Filter buttons ─────────────────────────────────────────
+    var activeFilter = 'all';
+    document.querySelectorAll('.sched-filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        activeFilter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.sched-filter-btn').forEach(function(b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        buildDesktop(activeFilter);
+        buildMobile(activeFilter);
+      });
+    });
+
+    // ── Init ───────────────────────────────────────────────────
+    buildDesktop('all');
+    buildMobile('all');
+  </script>
+
+</body>
+</html>

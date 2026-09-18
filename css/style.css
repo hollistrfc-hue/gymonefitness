@@ -846,3 +846,253 @@ p:last-child { margin-bottom: 0; }
   .footer__bottom { padding: 1.25rem; flex-direction: column; text-align: center; }
   .footer__credit { position: static; transform: none; }
 }
+
+/* ============================================================
+   CLASS SCHEDULE PAGE
+   ============================================================ */
+
+/* Toolbar */
+.sched-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.sched-filters {
+  display: flex;
+  border: 2px solid var(--black);
+}
+.sched-filter-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.25rem;
+  background: transparent;
+  color: var(--dark);
+  cursor: pointer;
+  border: none;
+  border-right: 2px solid var(--black);
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  min-height: 44px;
+}
+.sched-filter-btn:last-child { border-right: none; }
+.sched-filter-btn.active,
+.sched-filter-btn:hover      { background: var(--black); color: var(--white); }
+.sched-filter-btn:focus-visible { outline: 2px solid var(--black); outline-offset: -2px; }
+
+.sched-timezone {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Desktop 7-column grid */
+.sched-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  margin-bottom: 2.5rem;
+}
+.sched-col {
+  border-right: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+}
+.sched-col-header {
+  padding: 0.7rem 0.75rem 0.6rem;
+  background: var(--off-white);
+  border-bottom: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.sched-col--today .sched-col-header  { background: var(--black); }
+.sched-col--sunday .sched-col-header { background: #fafafa; }
+
+.sched-day-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--dark);
+  line-height: 1;
+}
+.sched-col--today  .sched-day-name { color: var(--white); }
+.sched-col--sunday .sched-day-name { color: #ccc; }
+
+.sched-today-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  line-height: 1;
+}
+
+.sched-col-body {
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+
+/* Class cards */
+.sched-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-left: 3px solid transparent;
+  padding: 0.5rem 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  transition: box-shadow 0.15s;
+}
+.sched-card:hover { box-shadow: 2px 2px 0 var(--black); }
+.sched-card--mind-body { border-left-color: #3d6b4f; }
+.sched-card--cardio    { border-left-color: #b83232; }
+.sched-card--strength  { border-left-color: #1e4580; }
+
+.sched-card-time {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  line-height: 1;
+}
+.sched-card-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.sched-empty {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: #ccc;
+  text-align: center;
+  padding: 1.25rem 0.5rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Legend */
+.sched-legend {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-gray);
+}
+.sched-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+.sched-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.sched-dot--mind-body { background: #3d6b4f; }
+.sched-dot--cardio    { background: #b83232; }
+.sched-dot--strength  { background: #1e4580; }
+
+/* Mobile layout (hidden on desktop) */
+.sched-mobile { display: none; }
+
+/* ---- Schedule responsive ---- */
+@media (max-width: 768px) {
+  .sched-grid   { display: none; }
+  .sched-mobile { display: block; }
+
+  .sched-toolbar { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+
+  .sched-tabs {
+    display: flex;
+    border: 2px solid var(--black);
+    margin-bottom: 1.25rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .sched-tabs::-webkit-scrollbar { display: none; }
+
+  .sched-tab {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.7rem 1.1rem;
+    background: transparent;
+    color: var(--dark);
+    border: none;
+    border-right: 2px solid var(--black);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
+    min-height: 44px;
+    position: relative;
+  }
+  .sched-tab:last-child   { border-right: none; }
+  .sched-tab.active,
+  .sched-tab:hover        { background: var(--black); color: var(--white); }
+  .sched-tab:focus-visible { outline: 2px solid var(--black); outline-offset: -2px; }
+
+  /* Small dot under today's tab when not active */
+  .sched-tab--today:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--black);
+  }
+
+  .sched-panel        { display: none; }
+  .sched-panel.active { display: flex; flex-direction: column; gap: 0.6rem; }
+
+  /* Mobile cards: horizontal layout */
+  .sched-panel .sched-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-left-width: 4px;
+  }
+  .sched-panel .sched-card-time {
+    font-size: 0.68rem;
+    flex-shrink: 0;
+    min-width: 54px;
+  }
+  .sched-panel .sched-card-name { font-size: 0.95rem; }
+
+  .sched-legend { gap: 1rem; }
+  .sched-legend__item { font-size: 0.75rem; }
+}
